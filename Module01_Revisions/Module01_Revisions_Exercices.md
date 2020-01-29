@@ -7,51 +7,51 @@ Pour chaque exercice, posez-vous les questions suivantes :
 3. Choisissez de bons noms de paramètres
 4. Écrivez des tests unitaires
 
-## Exercice 2
+## Exercice 1
 
 Écrivez une fonction qui prend deux entiers en paramètres et qui renvoi la somme de ces deux entiers.
 
-## Exercie 3
+## Exercice 2
 
 Écrivez une fonction qui prend deux entiers en paramètres et qui renvoi l’entier le plus petit.
 
-## Exercice 4
+## Exercice 3
 
 Écrivez une fonction qui prend un tableau de réels et qui renvoie la somme des valeurs de ce tableau.
 
-## Exercice 5
+## Exercice 4
 
 Écrivez une fonction qui prend un tableau de réels et qui renvoie le minimum des valeurs de ce tableau.
 
-## Exercice 6
+## Exercice 5
 
 Écrivez une fonction qui prend un tableau de réels et qui renvoie le maximum des valeurs de ce tableau.
 
-## Exercice 7
+## Exercice 6
 
 Écrivez une fonction qui prend un tableau de réels et qui renvoie la moyenne des valeurs de ce tableau.
 
-## Exercice 8
+## Exercice 7
 
 Écrivez une fonction qui prend en paramètres un tableau d’entiers et une valeur à chercher. Cette fonction renvoie vrai si la valeur est trouvée, faux sinon.
 
-## Exercice 9
+## Exercice 8
 
 Écrivez une fonction qui prend en paramètres un tableau d’entiers. Cette fonction renvoie vrai si le tableau est trié en ordre croissant, faux sinon.
 
-## Exercice 10
+## Exercice 9
 
 Écrivez une fonction qui prend en paramètres deux tableaux d’entiers. Cette fonction renvoie vrai si les deux tableaux sont égaux, faux sinon.
 
-## Exercice 11
+## Exercice 10
 
 Écrivez une fonction qui prend en paramètres un tableau d’entiers et qui renvoie un nouveau tableau dont les valeurs sont rangées dans l’ordre inverse. ({1, 4, 3} => {3, 4, 1}).
 
-## Exercice 12
+## Exercice 11
 
 Écrivez une fonction qui prend en paramètres un tableau d’entiers, deux indices et qui échange les valeurs présentes aux indices donnés.
 
-## Exercice 13
+## Exercice 12
 
 Écrivez une fonction qui prend en paramètres un tableau de réels, un indice et une nouvelle valeur à insérer dans le tableau. La fonction doit insérer la nouvelle valeur à l’indice reçu en paramètre, en décalant les éléments existants. Le dernier élément sera perdu.
 
@@ -65,7 +65,7 @@ Par exemple :
 Avant d'insérer la valeur dans le tableau, décalez les valeurs d'une case vers la droite.
 </details>
 
-## Exercice 14
+## Exercice 13
 
 Écrivez une fonction qui prend en paramètres deux tableaux de même capacité et qui renvoie un nouveau tableau dont chaque case est la somme des valeurs correspondantes dans les deux tableaux.
 
@@ -74,7 +74,7 @@ Avant d'insérer la valeur dans le tableau, décalez les valeurs d'une case vers
 Faut-il créer un nouveau tableau ?
 </details>
 
-## Exercice 15
+## Exercice 14 - Liste d'articles
 
 Vous devez gérer une liste d'articles.
 
