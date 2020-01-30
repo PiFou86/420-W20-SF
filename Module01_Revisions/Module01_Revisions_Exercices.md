@@ -81,7 +81,7 @@ Vous devez gérer une liste d'articles.
 Un article est défini par :
 
 - un numéro de référence
-- une date de référencement (Utilisez le type DateTime)
+- une date de référencement (Utilisez le type DateTime, initialisez la valeur de la date avec l'année, le mois et le jour. Exemple : `[...] = new DateTime(2020, 1, 31)` => 31 janvier 2020)
 - une description
 
 Vous devez proposer un menu permettant d'ajouter un article, de les afficher, d'en supprimer et de recherche un article par numéro de référence ou par la présence d'une sous-chaine dans la description (Utilisez la méthode Contains pour le valider).
