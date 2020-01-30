@@ -49,11 +49,11 @@ Pour chaque exercice, posez-vous les questions suivantes :
 
 ## Exercice 11
 
-Écrivez une fonction qui prend en paramètres un tableau d’entiers, deux indices et qui échange les valeurs présentes aux indices donnés.
+Écrivez une fonction qui prend en paramètres un tableau d’entiers, deux indices et qui échange les valeurs présentes aux indices donnés. La fonction agit sur le tableau passé en paramètres.
 
 ## Exercice 12
 
-Écrivez une fonction qui prend en paramètres un tableau de réels, un indice et une nouvelle valeur à insérer dans le tableau. La fonction doit insérer la nouvelle valeur à l’indice reçu en paramètre, en décalant les éléments existants. Le dernier élément sera perdu.
+Écrivez une fonction qui prend en paramètres un tableau de réels, un indice et une nouvelle valeur à insérer dans le tableau. La fonction doit insérer la nouvelle valeur à l’indice reçu en paramètre, en décalant les éléments existants. Le dernier élément sera perdu. La fonction agit sur le tableau passé en paramètres.
 
 Par exemple :
 
