@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:336px;height:144px;" version="1.1" viewBox="0 0 336 144" width="336px" zoomAndPan="magnify"><defs><filter height="300%" id="f3zdpfcbba9f4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Voiture--><rect fill="#FFFFFF" filter="url(#f3zdpfcbba9f4)" height="125.7305" id="Voiture" style="stroke: #000000; stroke-width: 1.5;" width="319" x="6" y="8"/><ellipse cx="140.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M143.2231,30.1431 Q142.6421,30.4419 142.0029,30.5913 Q141.3638,30.7407 140.6582,30.7407 Q138.1514,30.7407 136.8315,29.0889 Q135.5117,27.437 135.5117,24.3159 Q135.5117,21.1865 136.8315,19.5347 Q138.1514,17.8828 140.6582,17.8828 Q141.3638,17.8828 142.0112,18.0322 Q142.6587,18.1816 143.2231,18.4805 L143.2231,21.2031 Q142.5923,20.6221 141.9988,20.3523 Q141.4053,20.0825 140.7744,20.0825 Q139.4297,20.0825 138.7449,21.1492 Q138.0601,22.2158 138.0601,24.3159 Q138.0601,26.4077 138.7449,27.4744 Q139.4297,28.541 140.7744,28.541 Q141.4053,28.541 141.9988,28.2712 Q142.5923,28.0015 143.2231,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="161.25" y="28.5352">Voiture</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="324" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="12" y="54.6348">+Couleur: string «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="12" y="67.5898">+NombrePortes: int «get» «set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="12" y="80.5449">+Vitesse: double «get» «set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="324" y1="86.8652" y2="86.8652"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="307" x="12" y="101.5">+Accelerer(acceleration: double, dureeSecondes: double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="295" x="12" y="114.4551">+Freiner(deceleration: double, dureeSecondes: double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="12" y="127.4102">+SeDecrire() : string</text><!--
+@startuml Voiture
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+class Voiture {
+    + Couleur: string <<get>> <<set>>
+    + NombrePortes: int <<get>> <<set>>
+    + Vitesse: double <<get>> <<set>>
+    + Accelerer(acceleration: double, dureeSecondes: double)
+    + Freiner(deceleration: double, dureeSecondes: double)
+    + SeDecrire() : string
+}
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+OS Version: 10.15.2
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

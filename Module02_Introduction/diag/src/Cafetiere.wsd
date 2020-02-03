@@ -1,0 +1,13 @@
+@startuml Rapport
+
+SousPrgm -> MonnayeurCafetiere : Initialiser
+
+loop vrai
+    loop valeurPiece > 0
+        SousPrgm -> MonnayeurCafetiere : RecevoirPiece(valeurPiece)
+    end
+
+    SousPrgm -> MonnayeurCafetiere : ConfirmerVente
+    SousPrgm -> MonnayeurCafetiere : RendreMonnaie
+end
+@enduml

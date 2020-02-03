@@ -1,0 +1,11 @@
+@startuml Rapport
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+class Rapport {
+    + CompilerDonnees(annee: int)
+    + Imprimer()
+}
+@enduml

@@ -1,0 +1,18 @@
+@startuml Voiture
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+class Voiture {
+    - m_couleur: string
+    - m_nombrePortes: int
+    - m_vitesse: double
+    + Couleur: string <<get>> <<set>>
+    + NombrePortes: int <<get>> <<set>>
+    + Vitesse: double <<get>> <<set>>
+    + Accelerer(acceleration: double, dureeSecondes: double)
+    + Freiner(deceleration: double, dureeSecondes: double)
+    + SeDecrire() : string
+}
+@enduml
