@@ -12,7 +12,7 @@ La voiture ne peut pas accélerer au delà de 230 km / h et ne peut pas avoir un
 
 La méthode "AfficherEtat" affiche la marque de la voiture, son modèle, son statut d'alimentation et sa vitesse.
 
-La méthode "Initialiser" permet d'initialiser les valeurs de l'objet une fois créé. Cette méthode prend les valeurs de marque et de modèle, vous devez les affecter aux bonnes propriétés. Vous devez aussi mettre la valeur de vitesse à 0 et le statut de démarrage à faux.
+La méthode "Initialiser" permet d'initialiser les valeurs de l'objet une fois créé. Cette méthode prend les valeurs de marque et de modèle en paramètres, vous devez les affecter aux bonnes propriétés. Vous devez aussi mettre la valeur de vitesse à 0 et le statut de démarrage à faux.
 
 Écrivez un sous-programme qui permet de :
 
