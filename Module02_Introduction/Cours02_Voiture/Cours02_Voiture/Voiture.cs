@@ -112,14 +112,14 @@ namespace Cours02_Voiture
             }
             if (p_vitesseGagnee < 0)
             {
-                throw new ArgumentException("La vitesse gagnée doit être positive !", "p_vitesseGagnee");
+                throw new ArgumentOutOfRangeException("La vitesse gagnée doit être positive !", "p_vitesseGagnee");
             }
 
             double futureVitesse = this.Vitesse + p_vitesseGagnee;
 
             if (futureVitesse > 230)
             {
-                throw new InvalidOperationException("La vitesse ne peut pas dépasser 230 km / h !");
+                throw new ArgumentOutOfRangeException("La vitesse ne peut pas dépasser 230 km / h !", "p_vitesseGagnee");
             }
 
             this.Vitesse = futureVitesse;
@@ -133,14 +133,14 @@ namespace Cours02_Voiture
             }
             if (p_vitessePerdue < 0)
             {
-                throw new ArgumentException("La vitesse gagnée doit être positive !", "p_vitessePerdue");
+                throw new ArgumentOutOfRangeException("La vitesse perdue doit être positive !", "p_vitessePerdue");
             }
 
             double futureVitesse = this.Vitesse - p_vitessePerdue;
 
             if (futureVitesse < 0)
             {
-                throw new InvalidOperationException("La vitesse ne peut pas dépasser 230 km / h !");
+                throw new ArgumentOutOfRangeException("La vitesse ne peut pas être inférieure à 0 km / h !", "p_vitessePerdue");
             }
 
             this.Vitesse = futureVitesse;
