@@ -14,7 +14,7 @@ namespace Cours02_Voiture
                 {
                     throw new ArgumentException("La marque ne doit pas être vide ou nulle", "value");
                 }
-                m_marque = value;
+                this.m_marque = value;
             }
         }
 
@@ -117,6 +117,11 @@ namespace Cours02_Voiture
 
             double futureVitesse = this.Vitesse + p_vitesseGagnee;
 
+            if (futureVitesse > 230)
+            {
+                throw new InvalidOperationException("La vitesse ne peut pas dépasser 230 km / h !");
+            }
+
             this.Vitesse = futureVitesse;
         }
 
@@ -132,6 +137,11 @@ namespace Cours02_Voiture
             }
 
             double futureVitesse = this.Vitesse - p_vitessePerdue;
+
+            if (futureVitesse < 0)
+            {
+                throw new InvalidOperationException("La vitesse ne peut pas dépasser 230 km / h !");
+            }
 
             this.Vitesse = futureVitesse;
         }
