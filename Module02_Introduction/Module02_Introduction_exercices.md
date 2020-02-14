@@ -40,22 +40,21 @@ Complétez le code de la classe :
 
 Écrivez les tests unitaires.
 
-Écrivez un sous-programme qui propose :
+Écrivez un sous-programme qui propose (ce n'est pas un menu mais la suite d'opérations):
 
-1. d'afficher les choix disponibles à la vente :
+- d'afficher les choix disponibles à la vente :
 
 ```console
    1. Expresso 1$
    2. Jus de chaussettes 1.25$
 ```
 
-2. de saisir de la monnaie (simuler l'arrivée de pièces), zéro pour arrêter
-3. de choisir le type de café
-4. si le montant n'est pas valide
-   - retourner en 2 mais ne plus reposer la question du type de café
-5. servir le café demandé
-6. rendre la monnaie
-7. retourner en 1. (Le programme ne s'arrête pas)
+- de choisir le type de café
+- de saisir de la monnaie (simuler l'arrivée de pièces), zéro pour arrêter
+- si le montant n'est pas valide (retourner à la saisie de nouvelles pièces mais ne plus reposer la question du type de café)
+- servir le café demandé
+- rendre la monnaie
+- retourner au début (Le programme ne s'arrête pas)
 
 ## Exercice 2 - Voiture
 
