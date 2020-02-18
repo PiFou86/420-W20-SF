@@ -20,9 +20,9 @@ class Facture {
 class LigneFacture {
     - m_quantite : int
     - m_article : Article
-    + TotalHT : decimal <<get>>
-    + TotalTTC : decimal <<get>>
-    + TotalTaxes : decimal <<get>>
+    + TotalHorsTaxes : decimal <<get>>
+    + TotalTaxesIncluses : decimal <<get>>
+    + MontantTaxes : decimal <<get>>
     + RenvoyerChaine() : string
 }
 class Article {
@@ -30,6 +30,8 @@ class Article {
     - m_nom : string
     - m_prixUnitaire : decimal
     - m_tauxTaxes : decimal
+    + PrixUnitaire : decimal <<get>>
+    + TauxTaxes : decimal <<get>>
     + RenvoyerChaine() : string
 }
 @enduml

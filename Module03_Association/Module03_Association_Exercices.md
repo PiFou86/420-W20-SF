@@ -10,7 +10,7 @@ Créez le gabarit les classes du diagramme dans un nouveau projet Visual Studio.
 
 La méthode "AjouterArticle" prend un article et une quantité en paramètres et l'ajouter à la liste des lignes de la facture. Si l'article existe déjà, seulement la quantité est mise à jour.
 
-Les propriétés "NombreArticles", "TotalHT", "TotalTaxes" et "TotalTTC" renvoient respectivement le nombre d'éléments de la liste des lignes de la facture, le total hors taxes, le total des taxes et le total avec taxes de la facture ou d'une ligne de facture suivant la classe visée.
+Les propriétés "NombreArticles", "TotalHorsTaxes", "MontantTaxes" et "TotalTaxesIncluses" renvoient respectivement le nombre d'éléments de la liste des lignes de la facture, le total hors taxes, le montant des taxes et le total avec taxes de la facture ou d'une ligne de facture suivant la classe visée.
 
 1. Codez ces méthodes.
 2. Faites les tests unitaires de tout ce qui est "public".
