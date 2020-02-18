@@ -1,0 +1,36 @@
+@startuml FactureDiagClasses
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Facture "1" --> "*" LigneFacture : contient
+LigneFacture "1" --> "n" Article : référence
+
+class Facture {
+    - m_lignesFacture: List<LigneFacture>
+    + NombreArticles : int <<get>>
+    + TotalHT : decimal <<get>>
+    + TotalTTC : decimal <<get>>
+    + TotalTaxes : decimal <<get>>
+    + AjouterArticle(article : Article, quantite : int)
+    + RenvoyerChaine() : string
+}
+class LigneFacture {
+    - m_quantite : int
+    - m_article : Article
+    - m_totalLigne : decimal
+    + TotalHT : decimal <<get>>
+    + TotalTTC : decimal <<get>>
+    + TotalTaxes : decimal <<get>>
+    + RenvoyerChaine() : string
+}
+class Article {
+    - m_identifiant : string
+    - m_nom : string
+    - m_prixUnitaire : decimal
+    - m_tauxTaxes : decimal
+    + RenvoyerChaine() : string
+}
+@enduml

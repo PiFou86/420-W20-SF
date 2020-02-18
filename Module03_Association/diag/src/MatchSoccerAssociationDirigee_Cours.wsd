@@ -1,0 +1,15 @@
+@startuml MatchSoccerAssociationDirigee
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+MatchSoccer "*" --> "1" Arbitre : "est arbitré par"
+
+class MatchSoccer {
+    - m_arbitre: Arbitre
+}
+class Arbitre {
+}
+@enduml

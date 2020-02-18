@@ -1,0 +1,16 @@
+@startuml EtudiantAssociationDirigee
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+CoursPlanifie "0..*" --> "0..*" Etudiant : est suivi par
+
+class CoursPlanifie {
+    - m_etudiants: List<Etudiant>
+}
+class Etudiant {
+
+}
+@enduml

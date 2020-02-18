@@ -1,0 +1,26 @@
+@startuml FactureRenvoyerChaine
+
+actor Utilisateur
+
+activate Utilisateur
+activate SousPrgm
+Utilisateur -> SousPrgm : Afficher facture
+SousPrgm -> "f:Facture" : RenvoyerChaine
+activate "f:Facture"
+loop ligneFactures in "f:Facture"
+    "f:Facture" -> "lf:LigneFacture" : RenvoyerChaine
+    activate "lf:LigneFacture"
+    "lf:LigneFacture" -> "a:Article" : RenvoyerChaine
+    activate "a:Article"
+    "lf:LigneFacture" <-- "a:Article" : description article
+    deactivate "a:Article"
+    "f:Facture" <-- "lf:LigneFacture" : description ligne facture
+    deactivate "lf:LigneFacture"
+end
+SousPrgm <-- "f:Facture" : description facture
+deactivate "f:Facture"
+note over SousPrgm : Afficher la description
+deactivate SousPrgm
+deactivate Utilisateur
+
+@enduml

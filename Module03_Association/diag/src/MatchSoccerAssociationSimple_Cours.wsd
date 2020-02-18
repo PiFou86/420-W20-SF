@@ -1,0 +1,16 @@
+@startuml MatchSoccerAssociationSimple
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+MatchSoccer "*" --- "1" Arbitre
+
+class MatchSoccer {
+    - m_arbitre: Arbitre
+}
+class Arbitre {
+    - m_matchsSoccer : List<MatchSoccer>
+}
+@enduml

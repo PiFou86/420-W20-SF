@@ -1,0 +1,22 @@
+@startuml FactureAjouterArticle
+
+actor Utilisateur
+
+activate Utilisateur
+Utilisateur -> SousPrgm : Scanner article
+activate SousPrgm
+SousPrgm -> Utilisateur  : Saisir identifiant article
+alt identifiant n'existe pas dans la facture
+    SousPrgm -> Utilisateur  : Saisir nom
+    SousPrgm -> Utilisateur  : Saisir prix unitaire
+    SousPrgm -> Utilisateur  : Saisir taux taxes
+    SousPrgm -> "a:Article" : new / Initialiser
+end 
+SousPrgm -> Utilisateur  : Saisir en quantité
+SousPrgm -> Facture : AjouterArticle(article, quantite)
+activate Facture
+Facture -> "lf:LigneFacture" : new / Initialiser(article, quantite)
+deactivate Facture
+deactivate Utilisateur
+
+@enduml

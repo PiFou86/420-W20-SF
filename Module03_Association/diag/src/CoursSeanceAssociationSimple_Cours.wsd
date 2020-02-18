@@ -1,0 +1,16 @@
+@startuml CoursSeanceAssociationSimple
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+CoursPlanifie "1" --- "0..*" SeanceCours
+
+class CoursPlanifie {
+    - m_seancesCours: List<SeanceCours>
+}
+class SeanceCours {
+    - m_coursCorrespondant : CoursPlanifie
+}
+@enduml

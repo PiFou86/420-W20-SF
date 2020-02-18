@@ -1,0 +1,16 @@
+@startuml HumainComposition
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Humain "1" *-- "1" Cerveau : "a"
+
+class Humain {
+    - m_cerveau: Cerveau
+}
+class Cerveau {
+
+}
+@enduml

@@ -1,0 +1,15 @@
+@startuml EtudiantCarteAssociationSimple
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Etudiant "1" --> "1" CarteEtudiant : "possède"
+
+class Etudiant {
+    - m_carteEtudiant : CarteEtudiant
+}
+class CarteEtudiant {
+}
+@enduml

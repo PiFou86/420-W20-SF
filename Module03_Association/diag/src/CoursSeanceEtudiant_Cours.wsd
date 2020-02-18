@@ -1,0 +1,28 @@
+@startuml CoursSeanceAssociationDirigee
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+CoursPlanifie "1" --> "0..*" SeanceCours
+CoursPlanifie "0..*" --> "0..*" Etudiant : est suivi par
+Etudiant "1" --> "1" CarteEtudiant : "possède"
+
+class Etudiant {
+    - m_carteEtudiant : CarteEtudiant
+}
+class CarteEtudiant {
+}
+class CoursPlanifie {
+    - m_etudiants: List<Etudiant>
+}
+class Etudiant {
+
+}
+class CoursPlanifie {
+    - m_seancesCours: List<SeanceCours>
+}
+class SeanceCours {
+}
+@enduml

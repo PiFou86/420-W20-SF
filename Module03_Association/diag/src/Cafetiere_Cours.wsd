@@ -1,0 +1,39 @@
+@startuml Cafetiere1
+
+actor Utilisateur
+
+SousPrgm -> MonnayeurCafetiere : Initialiser
+
+loop vrai
+    activate Utilisateur
+    loop valeurPiece > 0
+        activate SousPrgm
+        Utilisateur -> SousPrgm : Insère une pièce ou 0
+        alt valeurPiece > 0
+            SousPrgm -> MonnayeurCafetiere : RecevoirPiece(valeurPiece)
+        end
+        deactivate SousPrgm
+    end
+
+    Utilisateur -> SousPrgm : EffectueUnChoix
+
+    loop !totalAtteint
+        activate SousPrgm
+        Utilisateur -> SousPrgm : Insère une pièce ou 0
+        alt valeurPiece > 0
+            SousPrgm -> MonnayeurCafetiere : RecevoirPiece(valeurPiece)
+        end
+    end
+
+    SousPrgm -> MonnayeurCafetiere : ConfirmerVente
+    activate MonnayeurCafetiere
+    SousPrgm -> MonnayeurCafetiere : RendreMonnaie
+    SousPrgm <-- MonnayeurCafetiere : Monnaie à rendre
+    deactivate MonnayeurCafetiere
+    SousPrgm --> Utilisateur : Pièces
+    deactivate SousPrgm
+    deactivate Utilisateur
+end
+
+
+@enduml
