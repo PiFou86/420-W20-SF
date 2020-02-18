@@ -20,7 +20,6 @@ class Facture {
 class LigneFacture {
     - m_quantite : int
     - m_article : Article
-    - m_totalLigne : decimal
     + TotalHT : decimal <<get>>
     + TotalTTC : decimal <<get>>
     + TotalTaxes : decimal <<get>>
