@@ -6,14 +6,14 @@ skinparam class {
 }
 
 Facture "1" --> "*" LigneFacture : contient
-LigneFacture "1" --> "n" Article : référence
+LigneFacture "1" --> "*" Article : référence
 
 class Facture {
     - m_lignesFacture: List<LigneFacture>
     + NombreArticles : int <<get>>
-    + TotalHT : decimal <<get>>
-    + TotalTTC : decimal <<get>>
-    + TotalTaxes : decimal <<get>>
+    + TotalHorsTaxes : decimal <<get>>
+    + TotalTaxesIncluses : decimal <<get>>
+    + MontantTaxes : decimal <<get>>
     + AjouterArticle(article : Article, quantite : int)
     + RenvoyerChaine() : string
 }
