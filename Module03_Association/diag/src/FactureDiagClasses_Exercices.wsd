@@ -6,7 +6,7 @@ skinparam class {
 }
 
 Facture "1" --> "*" LigneFacture : contient
-LigneFacture "1" --> "*" Article : référence
+LigneFacture "*" --> "1" Article : référence
 
 class Facture {
     - m_lignesFacture: List<LigneFacture>
