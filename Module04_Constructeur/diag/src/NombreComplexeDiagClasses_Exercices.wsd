@@ -1,0 +1,20 @@
+@startuml NombreComplexeDiagClasses
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+class NombreComplexe {
+    - m_valeurReelle : decimal
+    - m_valeurImaginaire : decimal
+    + NombreComplexe()
+    + NombreComplexe(p_valeurReelle : decimal)
+    + NombreComplexe(p_valeurReelle : decimal, p_valeurImaginaire : decimal)
+    + {static} operator+(p_operande1 : NombreComplexe, p_operande2 : NombreComplexe) : NombreComplexe
+    + {static} operator-(p_operande1 : NombreComplexe, p_operande2 : NombreComplexe) : NombreComplexe
+    + {static} operator*(p_operande1 : NombreComplexe, p_operande2 : NombreComplexe) : NombreComplexe
+    + RenvoyerChaine() : string
+}
+@enduml
+

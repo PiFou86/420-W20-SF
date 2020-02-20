@@ -1,0 +1,20 @@
+@startuml VoitureDiagClasses
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+class Voiture {
+    + NombrePortes : int <<get>> <<set>>
+    + Vitesse : double <<get>> <<set>>
+    + Couleur : string <<get>> <<set>>
+    + Voiture()
+    + Voiture(couleur : string)
+    + Voiture(nombrePortes : int)
+    + Voiture(nombrePortes : int, couleur : string)
+    + Accelerer(acceleration : double, dureeSecondes : double)
+    + Freiner(deceleration : double, dureeSecondes : double)
+    + RenvoyerChaine() : string
+}
+@enduml
