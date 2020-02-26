@@ -8,7 +8,6 @@ Créez les constructeurs correspondants aux méthodes "Initialiser" et supprimez
 
 ![Digramme de classes de Facture](../images/Module04_Constructeur/diag/src/FactureDiagClasses_Exercices/FactureDiagClasses.png)
 
-
 ## Nombres complexes
 
 Un nombre complexe est représenté par deux valeurs a et b représentant respectivement la partie réelle et l'autre la partie imaginaire préfixée par i : a + ib.
@@ -36,3 +35,9 @@ L'addition de deux nombres complexes suit la formule suivante : (a + ib) + (c + 
 La soustraction de deux nombres complexes suit la formule suivante : (a + ib) - (c + id) = (a - c) + i(b - d).
 
 La multiplication de deux nombres complexes suit la formule suivante : (a + ib) x (c + id) = (ac – bd) + i (ad  + bc).
+
+La méthode RenvoyerChaine renvoie les chaines suivantes :
+ - si la partie réelle est égale à 0, ne pas la renvoyer dans la chaine
+ - si la partie imaginaire est égale à 0, ne pas la renvoyer dans la chaine
+ - si les deux parties sont égales à 0, renvoyer "0"
+ - Exemples : "2", "42i", "-3 -5i", "0", "23 + 42i"
