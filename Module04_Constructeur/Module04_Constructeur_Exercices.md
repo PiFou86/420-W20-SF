@@ -37,7 +37,8 @@ La soustraction de deux nombres complexes suit la formule suivante : (a + ib) - 
 La multiplication de deux nombres complexes suit la formule suivante : (a + ib) x (c + id) = (ac – bd) + i (ad  + bc).
 
 La méthode RenvoyerChaine renvoie les chaines suivantes :
- - si la partie réelle est égale à 0, ne pas la renvoyer dans la chaine
- - si la partie imaginaire est égale à 0, ne pas la renvoyer dans la chaine
- - si les deux parties sont égales à 0, renvoyer "0"
- - Exemples : "2", "42i", "-3 -5i", "0", "23 + 42i"
+
+- si la partie réelle est égale à 0, ne pas la renvoyer dans la chaine
+- si la partie imaginaire est égale à 0, ne pas la renvoyer dans la chaine
+- si les deux parties sont égales à 0, renvoyer "0"
+- Exemples : "2", "42i", "-3 -5i", "0", "23 + 42i"
