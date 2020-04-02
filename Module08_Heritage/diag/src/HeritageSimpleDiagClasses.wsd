@@ -1,0 +1,29 @@
+@startuml HeritageSimpleDiagClasses
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+Animal <|-- Poule
+Animal <|-- Lion
+
+class Animal {
+    - m_energieAccumulee : double
+    + DateNaissance : DateTime <<get>> <<private set>>
+    + Masse : double <<get>> <<private set>>
+    + Animal(dateNaissance : DateTime, masse : double, energie : double)
+    + GagnerEnergie(energieGagneeKCalorie: double)
+    + DepenserEnergie(energieDepenseeKCalorie: double)
+}
+
+class Poule {
+    + Poule(dateNaissance : DateTime, masse : double, energie : double)
+    + MangerGraines(masseAbsorbeeGrammes : double)
+}
+
+class Lion {
+    + Lion(dateNaissance : DateTime, masse : double, energie : double)
+    + MangerZebre(masseAbsorbeeGrammes : double)
+    + MangerGazelle(masseAbsorbeeGrammes : double)
+}
+@enduml
