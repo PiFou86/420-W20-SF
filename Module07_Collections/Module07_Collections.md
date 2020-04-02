@@ -41,6 +41,6 @@ Le programme doit proposer le menu suivant :
 0 - Quitter l'application
 ```
 
-Le menu doit être implanté dans la classe GestionVoitureConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
+Le menu doit être implanté dans la classe GestionOrdinateurConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
 
 Justifiez le choix de votre collection.
