@@ -24,7 +24,7 @@ Implanter les options de menu pour qu'elles se comportent comme suit :
 - 4 : Afficher les voitures de la collection
 - 0 : Quitter l’application
 
-Le menu doit être implanté dans la classe GestionVoitureConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
+Le menu doit être implanté dans la classe GestionVoituresConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
 
 Justifiez le choix de votre collection.
 
@@ -41,6 +41,6 @@ Le programme doit proposer le menu suivant :
 0 - Quitter l'application
 ```
 
-Le menu doit être implanté dans la classe GestionOrdinateurConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
+Le menu doit être implanté dans la classe GestionOrdinateursConsole. Après avoir été instancié, il doit être lancé à partir du sous-programme principal.
 
 Justifiez le choix de votre collection.
