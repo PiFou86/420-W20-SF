@@ -1,0 +1,6 @@
+@startuml
+enum TypeTransaction {
+    DEBIT,
+    CREDIT,
+}
+@enduml

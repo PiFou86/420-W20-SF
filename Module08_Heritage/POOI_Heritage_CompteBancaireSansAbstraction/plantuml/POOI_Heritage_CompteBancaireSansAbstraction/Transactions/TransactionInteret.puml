@@ -1,0 +1,6 @@
+@startuml
+class TransactionInteret {
+    + TransactionInteret(p_montant:decimal)
+}
+Transaction <|-- TransactionInteret
+@enduml

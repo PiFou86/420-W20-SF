@@ -1,0 +1,9 @@
+@startuml
+class CompteAInteret {
+    + <<const>> FRAIS_TRANSACTION : decimal = 0.25m
+    + <<override>> Description : string <<get>> = "Compte à intérêt"
+    + CompteAInteret()
+    + CompteAInteret(p_solde:decimal)
+}
+CompteBancaire <|-- CompteAInteret
+@enduml

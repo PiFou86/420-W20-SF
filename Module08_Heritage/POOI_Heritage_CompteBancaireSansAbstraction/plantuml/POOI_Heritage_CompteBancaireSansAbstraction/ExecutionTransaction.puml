@@ -1,0 +1,11 @@
+@startuml
+class ExecutionTransaction {
+    + Solde : decimal <<get>>
+    + ExecutionTransaction(p_transaction:Transaction, p_solde:decimal)
+    + <<const>> LARGEUR_SOLDE : int = 20
+    + <<sealed>> <<override>> ToString() : string
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+}
+ExecutionTransaction --> "Transaction" Transaction
+@enduml

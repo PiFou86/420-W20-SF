@@ -1,0 +1,12 @@
+@startuml
+class CompteAvecMargeCredit {
+    + <<override>> Description : string <<get>> = "Compte avec marge de crédit"
+    + <<const>> FRAIS_TRANSACTION : decimal = 0.25m
+    + <<const>> TAUX_INTERET : decimal = 0.05m
+    + CompteAvecMargeCredit()
+    + CompteAvecMargeCredit(p_solde:decimal)
+    + <<override>> Deposer(p_montant:decimal) : void
+    + <<override>> Retirer(p_montant:decimal) : void
+}
+CompteBancaire <|-- CompteAvecMargeCredit
+@enduml

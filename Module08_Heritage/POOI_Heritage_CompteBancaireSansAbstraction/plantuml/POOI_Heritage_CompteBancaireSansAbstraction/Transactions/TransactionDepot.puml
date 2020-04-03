@@ -1,0 +1,6 @@
+@startuml
+class TransactionDepot {
+    + TransactionDepot(p_montant:decimal)
+}
+Transaction <|-- TransactionDepot
+@enduml

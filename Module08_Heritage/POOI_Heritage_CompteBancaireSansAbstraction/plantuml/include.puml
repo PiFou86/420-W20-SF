@@ -1,0 +1,79 @@
+@startuml
+class ExecutionTransaction {
+    + Solde : decimal <<get>>
+    + ExecutionTransaction(p_transaction:Transaction, p_solde:decimal)
+    + <<const>> LARGEUR_SOLDE : int = 20
+    + <<sealed>> <<override>> ToString() : string
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+}
+ExecutionTransaction --> "Transaction" Transaction
+class Program {
+    {static} Main(args:string[]) : void
+}
+class StringExtensions <<static>> {
+    + {static} PadBoth(p_str:string, p_length:int) : string
+}
+class Transaction {
+    + Transaction(p_typeTransaction:TypeTransaction, p_montant:decimal, p_description:string)
+    + Description : string <<get>>
+    + Montant : decimal <<get>>
+    + <<sealed>> <<override>> ToString() : string
+    + <<const>> LARGEUR_DESCRIPTION : int = 40
+    + <<const>> LARGEUR_TYPE : int = 6
+    + <<const>> LARGEUR_MONTANT : int = 15
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+}
+Transaction --> "Type" TypeTransaction
+class TransactionInteret {
+    + TransactionInteret(p_montant:decimal)
+}
+Transaction <|-- TransactionInteret
+class TransactionFrais {
+    + TransactionFrais(p_montant:decimal)
+}
+Transaction <|-- TransactionFrais
+enum TypeTransaction {
+    DEBIT,
+    CREDIT,
+}
+class TransactionRetrait {
+    + TransactionRetrait(p_montant:decimal)
+}
+Transaction <|-- TransactionRetrait
+class TransactionDepot {
+    + TransactionDepot(p_montant:decimal)
+}
+Transaction <|-- TransactionDepot
+class CompteAvecMargeCredit {
+    + <<override>> Description : string <<get>> = "Compte avec marge de crédit"
+    + <<const>> FRAIS_TRANSACTION : decimal = 0.25m
+    + <<const>> TAUX_INTERET : decimal = 0.05m
+    + CompteAvecMargeCredit()
+    + CompteAvecMargeCredit(p_solde:decimal)
+    + <<override>> Deposer(p_montant:decimal) : void
+    + <<override>> Retirer(p_montant:decimal) : void
+}
+CompteBancaire <|-- CompteAvecMargeCredit
+class CompteAInteret {
+    + <<const>> FRAIS_TRANSACTION : decimal = 0.25m
+    + <<override>> Description : string <<get>> = "Compte à intérêt"
+    + CompteAInteret()
+    + CompteAInteret(p_solde:decimal)
+}
+CompteBancaire <|-- CompteAInteret
+class CompteBancaire {
+    + Solde : decimal <<get>>
+    + <<virtual>> Description : string <<get>> = "Compte général"
+    + CompteBancaire()
+    + CompteBancaire(p_solde:decimal)
+    + <<virtual>> Retirer(p_montant:decimal) : void
+    + <<virtual>> Deposer(p_montant:decimal) : void
+    + AfficherHistoriqueCompte() : void
+    + <<const>> LARGEUR_NUMERO_LIGNE : int = 5
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+    + <<sealed>> <<override>> ToString() : string
+}
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+class StringExtensions <<static>> {
+    + {static} PadBoth(p_str:string, p_length:int) : string
+}
+@enduml

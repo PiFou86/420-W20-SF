@@ -1,0 +1,14 @@
+@startuml
+class Transaction {
+    + Transaction(p_typeTransaction:TypeTransaction, p_montant:decimal, p_description:string)
+    + Description : string <<get>>
+    + Montant : decimal <<get>>
+    + <<sealed>> <<override>> ToString() : string
+    + <<const>> LARGEUR_DESCRIPTION : int = 40
+    + <<const>> LARGEUR_TYPE : int = 6
+    + <<const>> LARGEUR_MONTANT : int = 15
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+}
+Transaction --> "Type" TypeTransaction
+@enduml

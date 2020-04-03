@@ -1,0 +1,6 @@
+@startuml
+class TransactionRetrait {
+    + TransactionRetrait(p_montant:decimal)
+}
+Transaction <|-- TransactionRetrait
+@enduml

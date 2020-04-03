@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="317px" preserveAspectRatio="none" style="width:790px;height:317px;" version="1.1" viewBox="0 0 790 317" width="790px" zoomAndPan="magnify"><defs><filter height="300%" id="fi1flc9pb90dl" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Animal--><rect fill="#FFFFFF" filter="url(#fi1flc9pb90dl)" height="138.6855" id="Animal" style="stroke: #000000; stroke-width: 1.5;" width="380" x="204" y="8"/><ellipse cx="370.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M372.7231,30.1431 Q372.1421,30.4419 371.5029,30.5913 Q370.8638,30.7407 370.1582,30.7407 Q367.6514,30.7407 366.3315,29.0889 Q365.0117,27.437 365.0117,24.3159 Q365.0117,21.1865 366.3315,19.5347 Q367.6514,17.8828 370.1582,17.8828 Q370.8638,17.8828 371.5112,18.0322 Q372.1587,18.1816 372.7231,18.4805 L372.7231,21.2031 Q372.0923,20.6221 371.4988,20.3523 Q370.9053,20.0825 370.2744,20.0825 Q368.9297,20.0825 368.2449,21.1492 Q367.5601,22.2158 367.5601,24.3159 Q367.5601,26.4077 368.2449,27.4744 Q368.9297,28.541 370.2744,28.541 Q370.9053,28.541 371.4988,28.2712 Q372.0923,28.0015 372.7231,27.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="390.75" y="28.5352">Animal</text><line style="stroke: #000000; stroke-width: 1.5;" x1="205" x2="583" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="210" y="54.6348">-m_energieAccumulee : double</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="249" x="210" y="67.5898">+DateNaissance : DateTime «get» «private set»</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="210" y="80.5449">+Masse : double «get» «private set»</text><line style="stroke: #000000; stroke-width: 1.5;" x1="205" x2="583" y1="86.8652" y2="86.8652"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="368" x="210" y="101.5">+Animal(dateNaissance : DateTime, masse : double, energie : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="210" y="114.4551">+GagnerEnergie(energieGagneeKCalorie: double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="288" x="210" y="127.4102">+DepenserEnergie(energieDepenseeKCalorie: double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="210" y="140.3652">+EmettreUnSon()</text><!--class Poule--><rect fill="#FFFFFF" filter="url(#fi1flc9pb90dl)" height="86.8652" id="Poule" style="stroke: #000000; stroke-width: 1.5;" width="372" x="6" y="213.5"/><ellipse cx="172.25" cy="229.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M174.7231,235.6431 Q174.1421,235.9419 173.5029,236.0913 Q172.8638,236.2407 172.1582,236.2407 Q169.6514,236.2407 168.3315,234.5889 Q167.0117,232.937 167.0117,229.8159 Q167.0117,226.6865 168.3315,225.0347 Q169.6514,223.3828 172.1582,223.3828 Q172.8638,223.3828 173.5112,223.5322 Q174.1587,223.6816 174.7231,223.9805 L174.7231,226.7031 Q174.0923,226.1221 173.4988,225.8523 Q172.9053,225.5825 172.2744,225.5825 Q170.9297,225.5825 170.2449,226.6492 Q169.5601,227.7158 169.5601,229.8159 Q169.5601,231.9077 170.2449,232.9744 Q170.9297,234.041 172.2744,234.041 Q172.9053,234.041 173.4988,233.7712 Q174.0923,233.5015 174.7231,232.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="192.75" y="234.0352">Poule</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="377" y1="245.5" y2="245.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="377" y1="253.5" y2="253.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="360" x="12" y="268.1348">+Poule(dateNaissance : DateTime, masse : double, energie : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="281" x="12" y="281.0898">+MangerGraines(masseAbsorbeeGrammes : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="12" y="294.0449">+EmettreUnSon()</text><!--class Lion--><rect fill="#FFFFFF" filter="url(#fi1flc9pb90dl)" height="99.8203" id="Lion" style="stroke: #000000; stroke-width: 1.5;" width="366" x="413" y="207"/><ellipse cx="580.25" cy="223" fill="#ADD1B2" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M582.7231,229.1431 Q582.1421,229.4419 581.5029,229.5913 Q580.8638,229.7407 580.1582,229.7407 Q577.6514,229.7407 576.3315,228.0889 Q575.0117,226.437 575.0117,223.3159 Q575.0117,220.1865 576.3315,218.5347 Q577.6514,216.8828 580.1582,216.8828 Q580.8638,216.8828 581.5112,217.0322 Q582.1587,217.1816 582.7231,217.4805 L582.7231,220.2031 Q582.0923,219.6221 581.4988,219.3523 Q580.9053,219.0825 580.2744,219.0825 Q578.9297,219.0825 578.2449,220.1492 Q577.5601,221.2158 577.5601,223.3159 Q577.5601,225.4077 578.2449,226.4744 Q578.9297,227.541 580.2744,227.541 Q580.9053,227.541 581.4988,227.2712 Q582.0923,227.0015 582.7231,226.4204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="23" x="600.75" y="227.5352">Lion</text><line style="stroke: #000000; stroke-width: 1.5;" x1="414" x2="778" y1="239" y2="239"/><line style="stroke: #000000; stroke-width: 1.5;" x1="414" x2="778" y1="247" y2="247"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="354" x="419" y="261.6348">+Lion(dateNaissance : DateTime, masse : double, energie : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="419" y="274.5898">+MangerZebre(masseAbsorbeeGrammes : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="278" x="419" y="287.5449">+MangerGazelle(masseAbsorbeeGrammes : double)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="419" y="300.5">+EmettreUnSon()</text><!--reverse link Animal to Poule--><path d="M300.82,160.38 C279.93,178.73 258.6,197.48 240.41,213.46 " fill="none" id="Animal&lt;-Poule" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="296.26,155.07,315.9,147.13,305.5,165.59,296.26,155.07" style="stroke: #A80036; stroke-width: 1.0;"/><!--reverse link Animal to Lion--><path d="M487.14,160.35 C505.21,176.22 523.61,192.39 540.02,206.81 " fill="none" id="Animal&lt;-Lion" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="482.5,165.59,472.1,147.13,491.74,155.07,482.5,165.59" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml HeritageSimpleRedefinitionDiagClasses
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+Animal <|- - Poule
+Animal <|- - Lion
+
+class Animal {
+    - m_energieAccumulee : double
+    + DateNaissance : DateTime <<get>> <<private set>>
+    + Masse : double <<get>> <<private set>>
+    + Animal(dateNaissance : DateTime, masse : double, energie : double)
+    + GagnerEnergie(energieGagneeKCalorie: double)
+    + DepenserEnergie(energieDepenseeKCalorie: double)
+    + EmettreUnSon()
+}
+
+class Poule {
+    + Poule(dateNaissance : DateTime, masse : double, energie : double)
+    + MangerGraines(masseAbsorbeeGrammes : double)
+    + EmettreUnSon()
+}
+
+class Lion {
+    + Lion(dateNaissance : DateTime, masse : double, energie : double)
+    + MangerZebre(masseAbsorbeeGrammes : double)
+    + MangerGazelle(masseAbsorbeeGrammes : double)
+    + EmettreUnSon()
+}
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 13.0.2+8
+Operating System: Mac OS X
+OS Version: 10.15.4
+Default Encoding: UTF-8
+Language: fr
+Country: CA
+--></g></svg>

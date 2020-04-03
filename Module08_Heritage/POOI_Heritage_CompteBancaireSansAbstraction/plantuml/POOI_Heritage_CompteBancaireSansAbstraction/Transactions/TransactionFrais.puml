@@ -1,0 +1,6 @@
+@startuml
+class TransactionFrais {
+    + TransactionFrais(p_montant:decimal)
+}
+Transaction <|-- TransactionFrais
+@enduml

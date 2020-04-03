@@ -1,0 +1,15 @@
+@startuml
+class CompteBancaire {
+    + Solde : decimal <<get>>
+    + <<virtual>> Description : string <<get>> = "Compte général"
+    + CompteBancaire()
+    + CompteBancaire(p_solde:decimal)
+    + <<virtual>> Retirer(p_montant:decimal) : void
+    + <<virtual>> Deposer(p_montant:decimal) : void
+    + AfficherHistoriqueCompte() : void
+    + <<const>> LARGEUR_NUMERO_LIGNE : int = 5
+    + {static} LigneIntersectionTransaction : string <<get>>
+    + {static} EnteteTransaction : string <<get>>
+    + <<sealed>> <<override>> ToString() : string
+}
+@enduml
