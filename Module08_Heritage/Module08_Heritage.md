@@ -1,5 +1,16 @@
 # Module 08 - Héritage
 
+Comme tous les exercices, la méthodologie est la suivante :
+
+- Comprendre le problème posé
+- Déterminer les entités principales
+- Faire une esquisse des classes du programme
+- Pensez à des cas d'utilisation
+- S'appuyer sur des diagrammes de séquence ou des fragments d'algorithmes pour valider les entités et méthodes
+- Ne prenez pas votre esquisse de diagramme pour argent comptant mais comme moyen de démarrer et un moyen de discussion avec vos collègues
+- Confrontez vos designs de classes / méthodes (noms, intéractions, responsabilité, découpage)
+- Remettez à jour votre diagramme pour refléter les améliorations
+
 ## Exercice 01 - Comptes bancaires
 
 Nous allons faire un premier exercice d’héritage en représentant trois types de comptes bancaires.
@@ -59,3 +70,22 @@ La particularité d’un mineur est que son âge doit toujours être entre 0 et 
 Vous devez vérifier et lancer des exceptions lorsqu’on ne respecte pas cette contrainte.
 
 Codez et faites les tests unitaires des classes demandées.
+
+## Exercice 04 - Projet -- Questionnaire, on concurrence Google forms !
+
+Vous devez créer un programme permettant de poser des questionnaires. Un questionnaire est composé d'un ensemble de questions. Les questions sont des types suivants :
+
+- Question avec une réponse de type décimal attendue
+- Question avec une réponse de type mot attendu
+- Question avec sélection d'un choix parmi une liste
+- Question avec sélection de choix (plus qu'un) parmi une liste
+
+Chaque question à une certaine valeur de points. L'évaluation par question est binaire, soit le candidat a la réponse attendue et il a tous les points, soit il ne l'a pas ou l'a partiellement et n'a aucun point.
+
+Les questions du questionnaire sont posées de manière aléatoire. Le candidat ne peut pas retourner sur une question déjà posée.
+
+Codez et faites les tests unitaires des classes demandées.
+
+Proposez un exemple de questionnaire.
+
+Écrivez un programme qui demande le nom d'un candidat, lui pose l'ensemble des questions du questionnaire et lui affiche son score sur le total du questionnaire ainsi que son score en pourcentage.

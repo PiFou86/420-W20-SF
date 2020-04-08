@@ -1,4 +1,4 @@
-@startuml HeritageSimpleDiagClasses
+@startuml HeritageSimpleRedefinitionDiagClasses
 skinparam classAttributeIconSize 0
 skinparam class {
     BackgroundColor White
@@ -14,16 +14,19 @@ class Animal {
     + Animal(dateNaissance : DateTime, masse : double, energie : double)
     + GagnerEnergie(energieGagneeKCalorie: double)
     + DepenserEnergie(energieDepenseeKCalorie: double)
+    + EmettreUnSon()
 }
 
 class Poule {
     + Poule(dateNaissance : DateTime, masse : double, energie : double)
     + MangerGraines(masseAbsorbeeGrammes : double)
+    + EmettreUnSon()
 }
 
 class Lion {
     + Lion(dateNaissance : DateTime, masse : double, energie : double)
     + MangerZebre(masseAbsorbeeGrammes : double)
     + MangerGazelle(masseAbsorbeeGrammes : double)
+    + EmettreUnSon()
 }
 @enduml
