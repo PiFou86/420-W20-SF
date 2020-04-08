@@ -64,7 +64,7 @@ Demander à l’utilisateur quel comportement il veut demander aux animaux : s�
 
 ## Exercice 03 - Mineur
 
-Reprenez votre classe Personne, avec le nom et l’âge. Ajoutez un nouveau type de personne : un mineur.
+Soit la classe Personne, avec un nom et un âge. Ajoutez un nouveau type de personne : un mineur.
 
 La particularité d’un mineur est que son âge doit toujours être entre 0 et 17, tous deux inclus.
 
