@@ -50,10 +50,9 @@ Pour réaliser ces comportements dans votre programme, faites un affichage dans 
 
 ```console
 Le poisson #0191902923 nage.
-Le poisson #0191902923 ouvre ses branchies.
 Le mammifère #15246 marche.
+Le poisson #0191902923 ouvre ses branchies.
 Le mammifère #15246 ouvre ses poumons.
-Le poisson #12873 nage.
 ...
 ```
 
