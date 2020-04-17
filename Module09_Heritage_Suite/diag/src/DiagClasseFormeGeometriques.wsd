@@ -1,0 +1,44 @@
+@startuml DiagClasseFormeGeometriques
+
+skinparam classAttributeIconSize 0
+skinparam handwritten true
+
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+class FormeGeometrique #BDD7EE {
+    + Dessiner() <<virtual>>
+    + CalculerAire() : double <<virtual>>
+}
+
+class Carre #A9D18E {
+    + LongueurCote : double <<get>> <<set>>
+    + PointDepart : Point2D <<get>> <<set>>
+    + Dessiner() <<override>>
+    + CalculerAire() : double <<override>>
+}
+
+class Rectangle #A9D18E {
+    + Hauteur : double <<get>> <<set>>
+    + Largeur : double <<get>> <<set>>
+    + PointDepart : Point2D <<get>> <<set>>
+    + Dessiner() <<override>>
+    + CalculerAire() : double <<override>>
+}
+
+class Cercle #A9D18E {
+    + Rayon : double <<get>> <<set>>
+    + Centre : Point2D <<get>> <<set>>
+    + Dessiner() <<override>>
+    + CalculerAire() : double <<override>>
+}
+
+FormeGeometrique <|-- Carre
+FormeGeometrique <|-- Rectangle
+FormeGeometrique <|-- Cercle
+
+
+
+@enduml

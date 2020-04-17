@@ -1,0 +1,39 @@
+@startuml AccessModifierPublic
+
+skinparam classAttributeIconSize 0
+skinparam handwritten true
+
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+package Assembly1 #DDF {
+    class Mere #BDD7EE {
+        public MethodeAAcceder()
+    }
+
+    class FilleAssembly1 #A9D18E {
+
+    }
+
+    Mere <|-- FilleAssembly1
+
+    class AutreClasseAssembly1 #A9D18E {
+
+    }
+}
+
+package Assembly2 #DFF {
+    class FilleAssembly2 #A9D18E {
+
+    }
+
+    Mere <|-- FilleAssembly2
+
+    class AutreClasseAssembly2 #A9D18E {
+
+    }
+}
+
+@enduml
