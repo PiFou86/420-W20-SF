@@ -10,6 +10,8 @@ Ce qui suit est un exercice d’introduction à ce type d’expressions.
 
 Créez le projet C# nommé "POOI_Module10_ExperimentationsLINQ" de type "Application console" dans Visual studio.
 
+Ajoutez les fichiers présents dans le répertoire src du répertoire courant du dépot git.
+
 #### Exemple 1 - Une première expression lambda
 
 1. Dans la classe "Programme", créer la méthode "Identite" comme suit :
