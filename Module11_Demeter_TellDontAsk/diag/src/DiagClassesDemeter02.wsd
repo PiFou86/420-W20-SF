@@ -9,8 +9,8 @@ skinparam class {
 UIGestionStockPlusPremium ..> Commande
 UIGestionStockPlusPremium ..> Panier
 UIGestionStockPlusPremium ..> Article
-UIGestionStockPlusPremium ..> ServiceFournisseurs
-UIGestionStockPlusPremium ..> DepotProduits
+UIGestionStockPlusPremium --> ServiceFournisseurs
+UIGestionStockPlusPremium --> DepotProduits
 UIGestionStockPlusPremium ..> InformationProduit
 UIGestionStockPlusPremium ..> Fourmisseur
 

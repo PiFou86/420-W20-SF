@@ -13,7 +13,7 @@ public class UIGestionStockPlusPremium
         {
             Fournisseur fournisseur = null;
             [...]
-            int quantite = this.m_DepotProduits.ObtenirInformationProduit(article).Quantite;
+            int quantite = this.m_depotProduits.ObtenirInformationProduit(article).Quantite;
             if (quantite <= 0) {
                 fournisseur = this.m_serviceFournisseurs.ChercherFournisseur(article);
                 fournisseur.PasserCommande(article);
