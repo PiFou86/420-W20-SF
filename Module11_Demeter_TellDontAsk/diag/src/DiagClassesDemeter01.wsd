@@ -19,4 +19,17 @@ class Test {
     + Truc(p_x : X)
 }
 
+class X {
+    + getY() : Y
+}
+
+class Y {
+    + getZ() : Z
+}
+
+class Z {
+    + setA(p_A : A)
+}
+
+
 @enduml
