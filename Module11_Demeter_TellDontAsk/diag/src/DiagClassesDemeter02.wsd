@@ -1,0 +1,58 @@
+@startuml Demeter02
+skinparam classAttributeIconSize 0
+skinparam handwritten true
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+UIGestionStockPlusPremium ..> Commande
+UIGestionStockPlusPremium ..> Panier
+UIGestionStockPlusPremium ..> Article
+UIGestionStockPlusPremium ..> ServiceFournisseurs
+UIGestionStockPlusPremium ..> DepotProduits
+UIGestionStockPlusPremium ..> InformationProduit
+UIGestionStockPlusPremium ..> Fourmisseur
+
+Commande ..> Panier
+
+DepotProduits ..> Article
+DepotProduits ..> InformationProduit
+
+Fourmisseur ..> Article
+
+ServiceFournisseurs ..> Article
+ServiceFournisseurs ..> Fourmisseur
+
+Panier ..> Article
+
+class UIGestionStockPlusPremium {
+    - m_serviceFournisseurs : ServiceFournisseurs
+    - m_depotProduits : DepotProduits
+    + PlacerCommande(p_commande : Commande)
+}
+
+class Commande {
+    + Panier : Panier <<get>> <<private set>>
+}
+
+class Panier {
+    + Articles : List<Article> <<get>> <<privateset>>
+}
+
+class DepotProduits {
+    + ObtenirInformationProduit(p_article : Article) : InformationProduit
+}
+
+class ServiceFournisseurs {
+    + ChercherFournisseur(p_article : Article) : Fournisseur
+}
+
+class InformationProduit {
+    + Quantite : int <<get>> <<private set>>
+}
+
+class Fourmisseur {
+    + PasserCommande(p_article : Article)
+}
+@enduml

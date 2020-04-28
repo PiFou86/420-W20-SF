@@ -1,0 +1,22 @@
+@startuml Demeter01
+skinparam classAttributeIconSize 0
+skinparam handwritten true
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Test ..> X
+Test ..> A
+Test ..> Y
+Test ..> Z
+
+X ..> Y
+Y ..> Z
+Z ..> A
+
+class Test {
+    + Truc(p_x : X)
+}
+
+@enduml
