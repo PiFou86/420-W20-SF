@@ -1,6 +1,6 @@
 @startuml Demeter02
 skinparam classAttributeIconSize 0
-skinparam handwritten true
+'skinparam handwritten true
 skinparam class {
     BackgroundColor White
     BorderColor #000
