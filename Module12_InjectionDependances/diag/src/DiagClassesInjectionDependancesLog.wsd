@@ -1,0 +1,32 @@
+@startuml InjectionDependancesLog
+skinparam classAttributeIconSize 0
+skinparam handwritten true
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Journalisation <|.. JournalisationConsole
+Journalisation <|.. JournalisationFichier
+
+
+UneClasse ..> Journalisation
+
+class UneClasse {
+    + ctor(p_journalisation : Journalisation)
+    + Foo()
+}
+
+interface Journalisation {
+    + Ecrire(p_message : string)
+}
+
+class JournalisationConsole {
+    + Ecrire(p_message : string) <<override>>
+}
+
+class JournalisationFichier {
+    + Ecrire(p_message : string) <<override>>
+}
+
+@enduml
