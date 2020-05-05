@@ -37,7 +37,7 @@ namespace POOI_Module11_JeuTir.Armes
 
         private ObjetJeu ObtenirCollision(Point3D p_positionArme, Vecteur3D p_direction)
         {
-            return new ObjetJeu(); // Normalement un calcul ici
+            return new Mur(); // Normalement un calcul ici
         }
     }
 }

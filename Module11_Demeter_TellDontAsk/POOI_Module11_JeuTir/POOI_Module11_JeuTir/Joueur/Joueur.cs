@@ -29,6 +29,7 @@ namespace POOI_Module11_JeuTir.Joueur
             this.m_armeSelectionnee = this.Armes[0];
             this.Position = new Point3D() { X = 0, Y = 0, Z = 0 };
             this.Direction = new Vecteur3D() { X = 1, Y = 0, Z = 0 };
+            this.MoteurSon = new MoteurSon();
         }
 
         public void RamasserArme(Arme p_arme)
