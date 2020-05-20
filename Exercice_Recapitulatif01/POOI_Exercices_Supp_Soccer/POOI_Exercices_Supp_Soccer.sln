@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOI_Exercices_Supp_Soccer", "POOI_Exercices_Supp_Soccer\POOI_Exercices_Supp_Soccer.csproj", "{E9E69CD0-DBB7-48B5-AE05-9651B356643B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOI_Exercices_Supp_Soccer_BL", "POOI_Exercices_Supp_Soccer_BL\POOI_Exercices_Supp_Soccer_BL.csproj", "{03506288-C6AE-40F0-B530-F335EC168DFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E69CD0-DBB7-48B5-AE05-9651B356643B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E69CD0-DBB7-48B5-AE05-9651B356643B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E69CD0-DBB7-48B5-AE05-9651B356643B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E69CD0-DBB7-48B5-AE05-9651B356643B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03506288-C6AE-40F0-B530-F335EC168DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03506288-C6AE-40F0-B530-F335EC168DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03506288-C6AE-40F0-B530-F335EC168DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03506288-C6AE-40F0-B530-F335EC168DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19657F2E-1F4B-4365-8299-9F49CEB732AF}
+	EndGlobalSection
+EndGlobal
