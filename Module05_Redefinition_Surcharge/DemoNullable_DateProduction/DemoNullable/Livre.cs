@@ -1,32 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DemoNullable
+namespace DemoNullable;
+
+public class Livre
 {
-    public class Livre
+    public DateTime? DateEmprunt { get; set; }
+    public DateTime? DateRetour
     {
-        public DateTime? DateEmprunt { get; set; }
-        public DateTime? DateRetour
+        get
         {
-            get
+            DateTime? dateRetour = null;
+            if (this.DateEmprunt.HasValue)
             {
-                DateTime? dateRetour = null;
-                if (this.DateEmprunt.HasValue)
-                {
-                    dateRetour = this.DateEmprunt.Value.AddDays(10);
-                }
-
-                return dateRetour;
+                dateRetour = this.DateEmprunt.Value.AddDays(10);
             }
+
+            return dateRetour;
         }
+    }
 
-        public DateTime? DateRetour2
+    public DateTime? DateRetour2
+    {
+        get
         {
-            get
-            {
-                return this.DateEmprunt?.AddDays(10);
-            }
+            return this.DateEmprunt?.AddDays(10);
         }
     }
 }

@@ -1,15 +1,14 @@
 ﻿using System;
 
-namespace DemoNullable
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            DateTime dateTime = DateProduction.Now;
+namespace DemoNullable;
 
-            DateProduction.AvancerTemps(3);
-            dateTime = DateProduction.Now;
-        }
+class Program
+{
+    static void Main(string[] args)
+    {
+        DateTime dateTime = DateProduction.Now;
+
+        DateProduction.AvancerTemps(3);
+        dateTime = DateProduction.Now;
     }
 }
