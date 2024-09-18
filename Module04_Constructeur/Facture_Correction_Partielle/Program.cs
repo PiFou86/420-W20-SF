@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace Facture_Correction_Partielle
+namespace Facture_Correction_Partielle;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Console.WriteLine("Hello World!");
     }
 }
