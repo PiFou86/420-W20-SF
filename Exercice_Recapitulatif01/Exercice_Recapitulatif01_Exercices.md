@@ -4,7 +4,7 @@
 
 Pour cet examen, nous allons simuler la gestion de la coupe du monde de soccer féminin 2019.
 
-Vous avez une base de code : si le projet ne s’importe pas, vous pouvez simplement créer votre projet et copier les classes fournies dans le répertoire src.
+Vous avez une base de code : si le projet ne s’importe pas, vous pouvez simplement créer votre projet et copier les classes fournies dans le répertoire POOI_Exercices_Supp_Soccer.
 
 ## Analyse du code existant
 
