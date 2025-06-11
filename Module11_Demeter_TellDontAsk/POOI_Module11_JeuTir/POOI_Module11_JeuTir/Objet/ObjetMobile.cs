@@ -1,8 +1,7 @@
 ﻿using POOI_Module11_JeuTir.Objet;
 
-namespace POOI_Module11_JeuTir.Joueur
+namespace POOI_Module11_JeuTir.Joueur;
+
+public class ObjetMobile : ObjetJeu
 {
-    public class ObjetMobile : ObjetJeu
-    {
-    }
 }
