@@ -6,18 +6,17 @@ skinparam class {
     BorderColor #000
 }
 
-Journalisation <|.. JournalisationConsole
-Journalisation <|.. JournalisationFichier
+IJournalisation <|.. JournalisationConsole
+IJournalisation <|.. JournalisationFichier
 
 
-UneClasse ..> Journalisation
-
+UneClasse ..> IJournalisation
 class UneClasse {
-    + ctor(p_journalisation : Journalisation)
+    + ctor(p_journalisation : IJournalisation)
     + Foo()
 }
 
-interface Journalisation {
+interface IJournalisation {
     + Ecrire(p_message : string)
 }
 

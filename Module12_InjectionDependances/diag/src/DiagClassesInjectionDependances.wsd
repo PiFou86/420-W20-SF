@@ -1,23 +1,25 @@
 @startuml InjectionDependances
 skinparam classAttributeIconSize 0
-skinparam handwritten true
+'skinparam handwritten true
 skinparam class {
     BackgroundColor White
     BorderColor #000
 }
 
-DepotDonneesClients <|.. DepotDonneesClientsMariaDb
-DepotDonneesClients <|.. DepotDonneesClientsXML
-DepotDonneesClients <|.. DepotDonneesClientsFichierPlat
+IDepotDonneesClients <|.. DepotDonneesClientsMariaDb
+IDepotDonneesClients <|.. DepotDonneesClientsJSON
+IDepotDonneesClients <|.. DepotDonneesClientsFichierPlat
+IDepotDonneesClients <|.. DepotDonneesClientsServiceWeb
+IDepotDonneesClients <|.. DepotDonneesClientsEnMemoireTest01
 
 
-SousProgramme ..> DepotDonneesClients
+SousProgramme ..> IDepotDonneesClients
 
 class SousProgramme {
     [...]()
 }
 
-interface DepotDonneesClients {
+interface IDepotDonneesClients {
     + ObtenirClient(p_identifiantClient : Guid) : Client {abstract}
     + ChercherClientsParNumeroTelephone(p_numeroTelephone : string) : List<Client> {abstract}
     + EnregistrerClient(p_client : Client) {abstract}
@@ -30,18 +32,23 @@ class DepotDonneesClientsMariaDb {
     + EnregistrerClient(p_client : Client) <<override>>
 }
 
-class DepotDonneesClientsXML {
-    + ctor(p_nomFichierXML : string)
-    + ObtenirClient(p_identifiantClient : Guid) : Client <<override>>
-    + ChercherClientsParNumeroTelephone(p_numeroTelephone : string) : List<Client> <<override>>
-    + EnregistrerClient(p_client : Client) <<override>>
+class DepotDonneesClientsJSON {
+    + ctor(p_nomFichierJSON : string)
+    + [...]
 }
 
 class DepotDonneesClientsFichierPlat {
     + ctor(p_nomFichierFichierPlat : string)
-    + ObtenirClient(p_identifiantClient : Guid) : Client <<override>>
-    + ChercherClientsParNumeroTelephone(p_numeroTelephone : string) : List<Client> <<override>>
-    + EnregistrerClient(p_client : Client) <<override>>
+    + [...]
 }
 
+class DepotDonneesClientsServiceWeb {
+    + ctor(p_urlServiceWeb : string)
+    + [...]
+}
+
+class DepotDonneesClientsEnMemoireTest01 {
+    + ctor()
+    + [...]
+}
 @enduml

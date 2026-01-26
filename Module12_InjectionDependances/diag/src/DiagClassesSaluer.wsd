@@ -1,0 +1,39 @@
+@startuml InjectionDependancesLog
+skinparam classAttributeIconSize 0
+'skinparam handwritten true
+skinparam class {
+    BackgroundColor White
+    BorderColor #000
+}
+
+Program .right.> ApplicationSalutations
+class Program {
+    + Main()
+}
+
+ISaluer <|.. SalutationFormelle
+ISaluer <|.. SalutationInformelle
+ISaluer <|.. SalutationAmicale
+ApplicationSalutations "1" --> "1" ISaluer
+class ApplicationSalutations {
+    + ctor(p_strategieSalutation : ISaluer)
+    + DireBonjour(p_nom : string) : string
+}
+
+interface ISaluer {
+    + Saluer(p_nom : string) : string
+}
+
+class SalutationFormelle {
+    + Saluer(p_nom : string) : string <<override>>
+}
+
+class SalutationInformelle {
+    + Saluer(p_nom : string) : string <<override>>
+}
+
+class SalutationAmicale {
+    + Saluer(p_nom : string) : string <<override>>
+}
+
+@enduml
