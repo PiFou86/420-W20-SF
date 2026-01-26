@@ -96,7 +96,7 @@ namespace ExempleSaluerPrepCours
             // Singleton : une seule instance est créée pour toute la durée de vie de l'application
             builder.Services.AddScoped<ApplicationSalutations>();
 
-            //builder.Services.AddTransient<ISaluer, SalutationFormelle>();
+            // builder.Services.AddTransient<ISaluer, SalutationFormelle>();
             // builder.Services.AddTransient<ISaluer, SalutationInformelle>();
             builder.Services.AddScoped<ISaluer, SalutationAmicale>();
 
