@@ -1,7 +1,6 @@
-﻿namespace POOI_Module11_JeuTir.Sons
+﻿namespace POOI_Module11_JeuTir.Sons;
+
+public class Son
 {
-    public class Son
-    {
-        public string TexteDuSon { get; set; }
-    }
+    public string TexteDuSon { get; set; }
 }

@@ -1,17 +1,14 @@
-﻿using POOI_Module09_PreparationCours.V1;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
-namespace POOI_Module09_PreparationCours
+namespace POOI_Module09_PreparationCours;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            //V1.DemoV1.Demo01();
-        }
-
-
+        Console.WriteLine("Hello World!");
+        //V1.DemoV1.Demo01();
     }
+
+
 }

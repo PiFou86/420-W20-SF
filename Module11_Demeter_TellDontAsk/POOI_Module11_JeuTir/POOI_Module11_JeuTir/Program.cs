@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace POOI_Module11_JeuTir
+namespace POOI_Module11_JeuTir;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }    
+        Console.WriteLine("Hello World!");
+    }
 }

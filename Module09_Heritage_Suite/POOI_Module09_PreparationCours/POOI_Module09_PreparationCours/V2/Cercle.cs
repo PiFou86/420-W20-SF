@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace POOI_Module09_PreparationCours.V2
+namespace POOI_Module09_PreparationCours.V2;
+
+public class Cercle : FormeGeometrique
 {
-    public class Cercle : FormeGeometrique
+    public Point2D Centre { get; set; }
+    public double Rayon { get; set; }
+
+    public override void Dessiner()
     {
-        public Point2D Centre { get; set; }
-        public double Rayon { get; set; }
+        Console.Out.WriteLine($"Cercle(PointDepart: {this.Centre}, Rayon: {this.Rayon})");
+    }
 
-        public override void Dessiner()
-        {
-            Console.Out.WriteLine($"Cercle(PointDepart: {this.Centre}, Rayon: {this.Rayon})");
-        }
-
-        public override double CalculerAire()
-        {
-            return Math.PI * Math.Pow(this.Rayon, 2);
-        }
+    public override double CalculerAire()
+    {
+        return Math.PI * Math.Pow(this.Rayon, 2);
     }
 }

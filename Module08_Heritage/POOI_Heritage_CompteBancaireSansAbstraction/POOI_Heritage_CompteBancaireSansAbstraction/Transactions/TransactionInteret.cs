@@ -1,10 +1,9 @@
-﻿namespace POOI_Heritage_CompteBancaireSansAbstraction.Transactions
+﻿namespace POOI_Heritage_CompteBancaireSansAbstraction.Transactions;
+
+public class TransactionInteret : Transaction
 {
-    public class TransactionInteret : Transaction
+    public TransactionInteret(decimal p_montant) : base(TypeTransaction.DEBIT, p_montant, "Application d'un intérêt")
     {
-        public TransactionInteret(decimal p_montant) : base(TypeTransaction.DEBIT, p_montant, "Application d'un intérêt")
-        {
-            ;
-        }
+        ;
     }
 }

@@ -1,9 +1,8 @@
 ﻿using POOI_Module11_JeuTir.Objet;
 
-namespace POOI_Module11_JeuTir.Physique
+namespace POOI_Module11_JeuTir.Physique;
+
+public class Collision
 {
-    public class Collision
-    {
-        public ObjetJeu ObjetTouche { get; set; }
-    }
+    public ObjetJeu ObjetTouche { get; set; }
 }

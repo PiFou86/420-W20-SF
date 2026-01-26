@@ -1,8 +1,7 @@
-﻿namespace POOI_Heritage_CompteBancaireSansAbstraction.Transactions
+﻿namespace POOI_Heritage_CompteBancaireSansAbstraction.Transactions;
+
+public enum TypeTransaction
 {
-    public enum TypeTransaction
-    {
-        DEBIT,
-        CREDIT
-    }
+    DEBIT,
+    CREDIT
 }

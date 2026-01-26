@@ -1,7 +1,6 @@
-﻿namespace POOI_Module11_JeuTir.Physique
+﻿namespace POOI_Module11_JeuTir.Physique;
+
+public class CollisionTir : Collision
 {
-    public class CollisionTir : Collision
-    {
-        public double Degat { get; set; }
-    }
+    public double Degat { get; set; }
 }
