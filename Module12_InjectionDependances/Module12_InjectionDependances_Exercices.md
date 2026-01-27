@@ -17,4 +17,3 @@ Reprenez l’interface « Journalisation ».
 Chaque appel à cette méthode doit être journalisé.
 
 L’objet de journalisation doit être injecté par le constructeur.
-
